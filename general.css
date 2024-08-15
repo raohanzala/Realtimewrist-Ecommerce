@@ -1,0 +1,188 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+
+:root{
+  --primary-color: #ffc451;
+  --primary-color2: #4263eb;
+  --secondary-color: #91a7ff;
+  --secondary-color2: #dbe4ff;
+  --primary-color2: #f59f00;
+}
+:root{
+  --primary-color: #000;
+  --primary-color2: #cba135 ;
+  --secondary-color: #ff8787;
+  --secondary-color2: #ffe3e3;
+}
+/* :root{
+  --primary-color: #ffd43b;
+  --secondary-color: #ffd43b;
+  --secondary-color2: #fff3bf;
+} */
+/* :root{
+  --primary-color: #2b8a3e;
+  --primary-color2: #37b24d;
+  --secondary-color: #69db7c;
+  --secondary-color2: #b2f2bb;
+} */
+
+html{
+  font-size: 62.5%;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+  font-family: 'Rubik', sans-serif;
+  font-family: 'Lato', sans-serif;
+  height: 100%;
+}
+
+body{
+  font-size: 62.5%;
+  height: 100%;
+  scroll-behavior: smooth;
+  color: #272829;
+  overflow-x: hidden;
+}
+
+
+/* *********************** */
+/* GENERAL REUSABLE COMPONENTS */
+/* *********************** */
+.container{
+  max-width: 120rem;
+  padding: 0 3.2rem;
+  margin: 0 auto;
+}
+.grid{
+  display: grid;
+  row-gap: 9.6rem;
+  column-gap: 6.4rem;
+}
+
+.grid:not(:last-child){
+  margin-bottom: 3.2rem;
+}
+
+.grid--2-cols{
+  grid-template-columns: repeat(2, 1fr);
+  column-gap: 3.2rem;
+}
+.grid--3-cols{
+  grid-template-columns: repeat(3, 1fr);
+}
+.grid--4-cols{
+  grid-template-columns: repeat(4, 1fr);
+  column-gap: 1.4rem;
+  row-gap: 4.8rem;
+}
+.grid--5-cols{
+  grid-template-columns: repeat(5, 1fr);
+}
+
+.main{
+  margin-top: 16rem;
+}
+
+
+.section-title{
+  display: inline-block;
+  text-align: center;
+  font-size: 2.8rem;
+  font-weight: 600;
+  margin: 0 auto 4.8rem auto;
+  padding: 0 0.8rem;
+  letter-spacing: .2rem  ;
+  text-transform: uppercase;
+  color: #cba135;
+  /* background-color: #fff; */
+}
+
+
+img{
+  width: 100%;
+  height: 100%;
+}
+
+.page-banner-men{
+  background: linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.4)), url(Men-Banner-740x130-1.jpg);
+}
+.page-banner-women{
+  background: linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.4)), url(Women-Banner-740x130-1.jpg);
+}
+.page-banner-contact{
+  background: linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.4)), url(assessts/img/hero-1.png);
+}
+.page-banner-men,.page-banner-women, .page-banner-contact{
+  height: 50vh;
+  object-fit: cover;
+  /* object-position: top; */
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+
+.link-custom{
+  display: inline-block;
+  margin: 0rem 0 1rem 0;
+  border: none;
+  color: #cba135;
+  padding: 1rem  2rem;
+  font-weight: 600;
+  font-size: 1.6rem;
+  border-radius: 0.2rem;
+  transition: all 0.2s ;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+.link-custom:hover{
+  text-decoration: underline;
+letter-spacing: 1px;
+animation: name duration timing-function delay iteration-count direction fill-mode;
+}
+
+.whatsapp{
+  position: fixed;
+  right: 4rem;
+  bottom: 2rem;
+  z-index: 999;
+  animation: jumping 0.2s ease-in-out infinite ;
+  /* animation-timing-function: 0.2s; */
+}
+.whatsapp img{
+  box-shadow: 0 5px 8px rgba(0,0,0,0.2);
+  width: 5rem;
+  height: 5rem;
+  border-radius: 50%;
+}
+
+@keyframes jumping {
+  0% {
+    transform: translateY(0);
+}
+
+50% {
+    transform: translateY(-10px);
+  }
+  60%{
+    transform: translateY(0);
+    animation-delay: 1s;
+  }
+100% {
+    transform: translateY(0);
+}
+  
+}
+
+.text-center{
+  text-align: center;
+}
+
