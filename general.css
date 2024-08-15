@@ -107,10 +107,10 @@ img{
 }
 
 .page-banner-men{
-  background: linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.4)), url(Men-Banner-740x130-1.jpg);
+  background: linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.4)), url(assessts/img/Men-Banner-740x130-1.jpg);
 }
 .page-banner-women{
-  background: linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.4)), url(Women-Banner-740x130-1.jpg);
+  background: linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.4)), url(assessts/img/Women-Banner-740x130-1.jpg);
 }
 .page-banner-contact{
   background: linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.4)), url(assessts/img/hero-1.png);
